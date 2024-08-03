@@ -1,44 +1,44 @@
 # Random User Table
 
-# Link Demo
+## Link Demo
 
 [Random User Table](https://users-app-phi-orpin.vercel.app/)
 
-## Mô Tả Dự Án
+## Random User Table
 
-Dự án này tạo một bảng hiển thị danh sách người dùng ngẫu nhiên sử dụng API từ [randomuser.me](https://randomuser.me/api/). Bảng này hỗ trợ phân trang và sắp xếp theo tên người dùng hoặc tên đầy đủ. Dự án được xây dựng bằng React, TypeScript và Tailwind CSS, với Redux để quản lý trạng thái.
+This project creates a table displaying a list of random users using the API from randomuser.me. The table supports pagination and sorting by username or full name. The project is built with React, TypeScript, and Tailwind CSS, with Redux for state management.
 
-## Các Công Nghệ Sử Dụng
+## Technologies Used
 
-- **React**: Thư viện JavaScript để xây dựng giao diện người dùng.
-- **TypeScript**: Ngôn ngữ lập trình mở rộng từ JavaScript, thêm tính năng kiểu tĩnh.
-- **Tailwind CSS**: Khung CSS tiện ích để tạo kiểu giao diện nhanh chóng.
-- **Redux**: Thư viện quản lý trạng thái cho các ứng dụng JavaScript.
-- **Redux Toolkit**: Bộ công cụ chính thức để đơn giản hóa việc sử dụng Redux.
-- **Prettier**: Công cụ định dạng mã nguồn.
+- **React**: JavaScript library for building user interfaces.
+- **TypeScript**: Programming language that extends JavaScript by adding static types.
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
+- **Redux**: State management library for JavaScript applications.
+- **Redux Toolkit**: Official toolset for simplifying Redux usage.
+- **Prettier**: Code formatter.
 
-## Các Chức Năng Chính
+## Main Features
 
-- **Hiển Thị Người Dùng**: Hiển thị thông tin người dùng bao gồm tên đầy đủ, tên người dùng và ảnh đại diện.
-- **Phân Trang**: Hiển thị 10 người dùng mỗi trang, có thể phân trang đến 100 người dùng.
-- **Sắp Xếp**: Sắp xếp người dùng theo tên người dùng hoặc tên đầy đủ trên giao diện người dùng.
+- **User Display**: Shows user information including full name, username, and avatar.
+- **Pagination**: Displays 10 users per page, with pagination support for up to 100 users.
+- **Sorting**: Allows sorting users by username or full name in the UI.
 
-## Cách Cài Đặt và Chạy Dự Án
+## Setup and Running the Project
 
-### Cài Đặt
+### Installation
 
 1. **Clone Repository**:
    ```bash
    git clone https://github.com/RiverNguyen/users-app.git
    cd users-app
    ```
-2. **Cài Đặt Dependencies**:
+2. **Install Dependencies:**:
    ```bash
    npm install
    ```
-3. **Chạy Dự Án**:
+3. **Start the Project**:
    ```bash
    npm start
    ```
-4. **Mở Trình Duyệt**:
-   Mở trình duyệt và truy cập vào `http://localhost:3000/`.
+4. **Open Browser**:
+   Open your browser and go to `http://localhost:3000/`.
