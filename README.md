@@ -1,30 +1,40 @@
-# React + TypeScript + Vite
+# Random User Table
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Mô Tả Dự Án
 
-Currently, two official plugins are available:
+Dự án này tạo một bảng hiển thị danh sách người dùng ngẫu nhiên sử dụng API từ [randomuser.me](https://randomuser.me/api/). Bảng này hỗ trợ phân trang và sắp xếp theo tên người dùng hoặc tên đầy đủ. Dự án được xây dựng bằng React, TypeScript và Tailwind CSS, với Redux để quản lý trạng thái.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Các Công Nghệ Sử Dụng
 
-## Expanding the ESLint configuration
+- **React**: Thư viện JavaScript để xây dựng giao diện người dùng.
+- **TypeScript**: Ngôn ngữ lập trình mở rộng từ JavaScript, thêm tính năng kiểu tĩnh.
+- **Tailwind CSS**: Khung CSS tiện ích để tạo kiểu giao diện nhanh chóng.
+- **Redux**: Thư viện quản lý trạng thái cho các ứng dụng JavaScript.
+- **Redux Toolkit**: Bộ công cụ chính thức để đơn giản hóa việc sử dụng Redux.
+- **Prettier**: Công cụ định dạng mã nguồn.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Các Chức Năng Chính
 
-- Configure the top-level `parserOptions` property like this:
+- **Hiển Thị Người Dùng**: Hiển thị thông tin người dùng bao gồm tên đầy đủ, tên người dùng và ảnh đại diện.
+- **Phân Trang**: Hiển thị 10 người dùng mỗi trang, có thể phân trang đến 100 người dùng.
+- **Sắp Xếp**: Sắp xếp người dùng theo tên người dùng hoặc tên đầy đủ trên giao diện người dùng.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Cách Cài Đặt và Chạy Dự Án
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Cài Đặt
+
+1. **Clone Repository**:
+   ```bash
+   git clone https://github.com/username/random-user-table.git
+   cd random-user-table
+   ```
+2. **Cài Đặt Dependencies**:
+   ```bash
+   npm install
+   ```
+3. **Chạy Dự Án**:
+   ```bash
+   npm start
+   ```
+4. **Mở Trình Duyệt**:
+   Mở trình duyệt và truy cập vào `http://localhost:3000/`.

@@ -1,8 +1,11 @@
+/* eslint-disable prefer-const */
 /* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { useDispatch, useSelector } from 'react-redux'
 import { AppDispatch, RootState } from '../../redux/store'
 import { useEffect, useState, useMemo } from 'react'
 import { fetchUsers } from '../../redux/users/usersSlice'
+import { Loader } from 'lucide-react'
 
 interface UserTableProps {
   page: number
@@ -22,7 +25,6 @@ const UserTable: React.FC<UserTableProps> = ({ page }) => {
   }, [dispatch, page])
 
   const sortedUsers = useMemo(() => {
-    // eslint-disable-next-line prefer-const
     let sortableUsers = [...users]
     if (sortConfig.key) {
       sortableUsers.sort((a: any, b: any) => {
@@ -61,7 +63,12 @@ const UserTable: React.FC<UserTableProps> = ({ page }) => {
 
   return (
     <div className="relative overflow-x-auto">
-      {loading === true && <div>Loading...</div>}
+      <h1 className="my-4 text-2xl font-semibold text-center">User List</h1>
+      {loading === true && (
+        <div className="flex justify-center items-center my-10">
+          <Loader className="h-8 w-8 text-sky-500 animate-spin" />
+        </div>
+      )}
       {loading === false && (
         <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 bg-gray-50">
           <thead className="text-xs text-gray-700 uppercase">
@@ -84,12 +91,12 @@ const UserTable: React.FC<UserTableProps> = ({ page }) => {
           <tbody>
             {sortedUsers.map((user: any) => (
               <tr
-                className="bg-white border-b hover:bg-gray-50 cursor-pointer"
+                className="bg-white border-b hover:bg-gray-50 cursor-pointer "
                 key={user.login.uuid}
               >
-                <td>{`${user.name.first} ${user.name.last}`}</td>
-                <td>{user.login.username}</td>
-                <td>
+                <td className="px-6 py-3">{`${user.name.first} ${user.name.last}`}</td>
+                <td className="px-6 py-3">{user.login.username}</td>
+                <td className="px-6 py-3">
                   <img src={user.picture.thumbnail} alt="thumbnail" />
                 </td>
               </tr>
