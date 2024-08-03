@@ -74,6 +74,7 @@ const Pagination: React.FC<PaginationProps> = ({
                   {page}
                 </button>
               ))}
+
               {currentPage === totalPages ? (
                 <button
                   disabled

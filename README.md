@@ -4,6 +4,10 @@
 
 [Random User Table](https://users-app-phi-orpin.vercel.app/)
 
+## Video Demo
+
+[The Video](https://www.youtube.com/watch?v=ow4H0Y7A8Ak)
+
 ## Random User Table
 
 This project creates a table displaying a list of random users using the API from randomuser.me. The table supports pagination and sorting by username or full name. The project is built with React, TypeScript, and Tailwind CSS, with Redux for state management.
@@ -24,8 +28,6 @@ This project creates a table displaying a list of random users using the API fro
 - **Sorting**: Allows sorting users by username or full name in the UI.
 
 ## Setup and Running the Project
-
-### Installation
 
 1. **Clone Repository**:
    ```bash
