@@ -95,7 +95,7 @@ const UserTable: React.FC<UserTableProps> = ({ page }) => {
                 className="bg-white border-b hover:bg-gray-50 cursor-pointer "
                 key={user.login.uuid}
               >
-                <td className="px-6 py-3">{`${user.name.first} ${user.name.last}`}</td>
+                <td className="px-6 py-3">{`${user.name.title} ${user.name.first} ${user.name.last}`}</td>
                 <td className="px-6 py-3">{user.login.username}</td>
                 <td className="px-6 py-3">
                   <img src={user.picture.thumbnail} alt="thumbnail" />
