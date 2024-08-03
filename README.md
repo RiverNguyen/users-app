@@ -25,8 +25,8 @@ Dự án này tạo một bảng hiển thị danh sách người dùng ngẫu n
 
 1. **Clone Repository**:
    ```bash
-   git clone https://github.com/username/random-user-table.git
-   cd random-user-table
+   git clone https://github.com/RiverNguyen/users-app.git
+   cd users-app
    ```
 2. **Cài Đặt Dependencies**:
    ```bash
