@@ -13,8 +13,9 @@ interface UserTableProps {
 
 const UserTable: React.FC<UserTableProps> = ({ page }) => {
   const dispatch = useDispatch<AppDispatch>()
-  const users = useSelector((state: RootState) => state.users.users)
-  const loading = useSelector((state: RootState) => state.users.loading)
+  const { users } = useSelector((state: RootState) => state.users)
+  const { loading } = useSelector((state: RootState) => state.users)
+
   const [sortConfig, setSortConfig] = useState<{
     key: string
     direction: 'ascending' | 'descending'

@@ -1,5 +1,9 @@
 # Random User Table
 
+# Link Demo
+
+[Random User Table](https://users-app-phi-orpin.vercel.app/)
+
 ## Mô Tả Dự Án
 
 Dự án này tạo một bảng hiển thị danh sách người dùng ngẫu nhiên sử dụng API từ [randomuser.me](https://randomuser.me/api/). Bảng này hỗ trợ phân trang và sắp xếp theo tên người dùng hoặc tên đầy đủ. Dự án được xây dựng bằng React, TypeScript và Tailwind CSS, với Redux để quản lý trạng thái.

@@ -1,13 +1,19 @@
-import { useState } from 'react'
 import Pagination from './users/components/Pagination'
 import UserTable from './users/components/UserTable'
+import { useDispatch, useSelector } from 'react-redux'
+import { AppDispatch, RootState } from './redux/store'
+import { setCurrentPage } from './redux/pagination/paginationSlice'
 
 function App() {
-  const [currentPage, setCurrentPage] = useState(1)
+  const currentPage = useSelector(
+    (state: RootState) => state.pagination.currentPage
+  )
+  const dispatch: AppDispatch = useDispatch()
 
   const handlePageChange = (page: number) => {
-    setCurrentPage(page)
+    dispatch(setCurrentPage(page))
   }
+
   return (
     <>
       <div>
